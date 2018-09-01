@@ -2,8 +2,19 @@
 
 module C = Cmdliner
 
+type t =
+  { x: int
+  ; y: int
+  } [@@deriving show]
+
+let vec = 
+  { x = 1
+  ; y = 2
+  }
+
 let hello name =
-  Printf.printf "Hello, %s!\n" name
+  Printf.printf "Hello, %s!\n" name;
+  Printf.printf "vec = %s\n" (show vec)
 
 module Command = struct
   let help =

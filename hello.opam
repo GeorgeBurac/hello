@@ -13,5 +13,6 @@ build: [
 depends: [
   "jbuilder"    {build}
   "cmdliner"
+  "ppx_deriving"
 ]
 
